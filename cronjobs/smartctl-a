@@ -1,0 +1,9 @@
+#!/bin/sh
+#
+
+DATE=$(date --iso-8601=seconds)
+
+cd /var/log/smart
+
+for x in $( ls /dev/disk/by-id/scsi-SATA_* | grep -v part ) ; do smartctl -a $x > $( basename $x)_${DATE} || true ; done
+

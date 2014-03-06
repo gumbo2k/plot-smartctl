@@ -1,0 +1,1 @@
+../plot-smartctl.pl  -o ./example1.png ./data1/*BT9753*

@@ -1,0 +1,1 @@
+../plot-smartctl.pl -o ./example2.png -r 1280,720 -d ./data1/ -p BT9753
